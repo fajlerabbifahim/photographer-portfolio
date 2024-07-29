@@ -14,7 +14,7 @@
   --secondary-color: #042738;
   --third-color: #666666;
   --title-font: 2rem;
-  --describtion-font: 0.9rem;
+  --describtion-font: 0.8rem;
   --Poppins: Poppins;
   --roboto: roboto;
   --raleway: raleway;
@@ -22,20 +22,23 @@
 
 /* ====navbar style==== */
 header {
-  background-color: var(--secondary-color);
+  background-image: url(asset/Colored\ Shapes.svg);
+  background-position: center;
+  background-size: cover;
   max-width: 1440px;
-  max-height: 770px;
+  max-height: 950px;
 }
 .navbar {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 12%;
+  padding: 10px 11%;
   align-items: center;
 }
 .logo {
   font-size: 2rem;
   font-family: var(--Poppins);
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -51,8 +54,9 @@ header {
 .navbar a {
   color: white;
   text-decoration: none;
-  margin-right: 60px;
+  margin-right: 50px;
   font-size: 1rem;
+  font-weight: 500;
   font-family: var(--Poppins);
   transition: 400ms ease;
 }
@@ -64,6 +68,7 @@ header {
   border-radius: 4px;
   font-family: var(--Poppins);
   font-size: 1rem;
+  font-weight: 500;
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -76,4 +81,78 @@ header {
 }
 .nav-btn:hover {
   background-color: #348f80;
+}
+
+/* ====hero section style==== */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 11%;
+}
+.left-content h2 {
+  font-size: 1.8rem;
+  font-family: var(--roboto);
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.left-content h1 {
+  color: white;
+  font-size: var(--title-font);
+  font-family: var(--raleway);
+  font-weight: 600;
+}
+#left-header-span {
+  color: var(--primary-color);
+}
+.left-content p {
+  max-width: 400px;
+  font-size: var(--describtion-font);
+  font-weight: 500;
+  font-family: var(--Poppins);
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.hero-btn {
+  font-family: var(--Poppins);
+  margin-right: 20px;
+  padding: 6px 9px;
+  font-weight: 500;
+  font-size: var(--describtion-font);
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 800ms ease;
+}
+.hero-btn:hover {
+  background-color: #348f80;
+}
+.right-content img {
+  width: 500px;
+  margin-top: -38px;
+}
+
+/* ======responsive===== */
+@media screen and (max-width: 576px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  .hero-container {
+    margin: 0 10px;
+  }
+  #align-center {
+    align-items: center;
+    text-align: center;
+  }
 }
