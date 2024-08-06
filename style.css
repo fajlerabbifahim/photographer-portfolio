@@ -267,4 +267,8 @@ header {
   .gallery-container {
     margin: 1000px 0px 20px 0px;
   }
+  .image-box {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
